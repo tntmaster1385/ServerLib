@@ -2,7 +2,7 @@ local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster
 
 local Window = Lib:Window({
 	Name = "Server's Library",
-	CurrentTheme = "Light",
+	CurrentTheme = "Dark",
 	Theme = {
 		Dark = {
 			BrandColor = Color3.fromRGB(255, 0, 0),
