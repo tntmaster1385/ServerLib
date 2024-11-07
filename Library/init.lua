@@ -11,7 +11,7 @@ local Mouse = LocalPlayer:GetMouse()
 local Library = {}
 Library.Instances = {}
 
-local Root = script.Parent
+local Root = script
 
 local Fade = require(Root.Fade)
 local SnapDragon = require(Root.SnapDragon)
