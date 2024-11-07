@@ -32,8 +32,6 @@ function module.new(themeColor)
 		TweenService = game:GetService("TweenService"),
 	}
 	
-	self.fade = require(Root.Fade)
-	
 	self.tween = function(object, info, goal)
 		local tween = self._services.TweenService:Create(object, info, goal)
 		tween:Play()
