@@ -13,12 +13,12 @@ Library.Instances = {}
 
 local Root = script.Parent
 
-local Fade = require(Root.Fade)
-local SnapDragon = require(Root.SnapDragon)
-local FitToSize = require(Root.FitToSize)
-local CircleClick = require(Root.CircleClick)
-local Intro = require(Root.Intro)
-local States = require(Root.States)
+local Fade = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/Fade.lua"))
+local SnapDragon = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/SnapDragon/init.lua"))
+local FitToSize = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/FitToSize.lua"))
+local CircleClick = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/CircleClick.lua"))
+local Intro = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/Intro.lua"))
+local States = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/States.lua"))
 
 function Library:Tween(Object, Info, Goal)
 	local Tween = TweenService:Create(Object, Info, Goal)
