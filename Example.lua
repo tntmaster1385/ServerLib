@@ -1,4 +1,4 @@
-local Lib = loadstring("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/init.lua")()
+local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/init.lua"))()
 
 local Window = Lib:Window({
 	Name = "Server's Library",
