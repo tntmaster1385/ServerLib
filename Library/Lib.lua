@@ -11,12 +11,14 @@ local Mouse = LocalPlayer:GetMouse()
 local Library = {}
 Library.Instances = {}
 
-local Fade = require(script.Fade)
-local SnapDragon = require(script.SnapDragon)
-local FitToSize = require(script.FitToSize)
-local CircleClick = require(script.CircleClick)
-local Intro = require(script.Intro)
-local States = require(script.States)
+local Root = script.Parent
+
+local Fade = require(Root.Fade)
+local SnapDragon = require(Root.SnapDragon)
+local FitToSize = require(Root.FitToSize)
+local CircleClick = require(Root.CircleClick)
+local Intro = require(Root.Intro)
+local States = require(Root.States)
 
 function Library:Tween(Object, Info, Goal)
 	local Tween = TweenService:Create(Object, Info, Goal)
