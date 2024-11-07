@@ -113,17 +113,3 @@ do
 		
 	})
 end
-
-do
-	local Tab = Window:Tab({
-		Name = "Info",
-		Icon = 11780939099,
-	})
-	
-	Tab:Section({Name = "Server Info"})
-
-	Tab:Paragraph({
-		Name = "Paragraph Example",
-		Description = "Description Example"
-	})
-end
