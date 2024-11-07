@@ -1,10 +1,10 @@
 local UserInputService = game:GetService("UserInputService")
 
-local objectAssign = require(script.Parent.objectAssign)
-local Signal = require(script.Parent.Signal)
-local SnapdragonRef = require(script.Parent.SnapdragonRef)
-local t = require(script.Parent.t)
-local Maid = require(script.Parent.Maid)
+local objectAssign = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/SnapDragon/objectAssign.lua"))()
+local Signal = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/SnapDragon/Signal.lua"))()
+local SnapdragonRef = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/SnapDragon/SnapdragonRef.lua"))()
+local t = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/SnapDragon/t.lua"))()
+local Maid = loadstring(game:HttpGet("https://raw.githubusercontent.com/tntmaster1385/ServerLib/refs/heads/main/Library/SnapDragon/Maid.lua"))()
 
 local MarginTypeCheck = t.interface({
 	Vertical = t.optional(t.Vector2),
