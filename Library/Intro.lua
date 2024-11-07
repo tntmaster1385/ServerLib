@@ -20,6 +20,7 @@ end
 
 function module.new(themeColor)
 	local self = setmetatable({}, {__index = module})
+	local Root = script.Parent
 	
 	self._frame = create_intro()
 	self._template = create_line()
@@ -31,7 +32,7 @@ function module.new(themeColor)
 		TweenService = game:GetService("TweenService"),
 	}
 	
-	self.fade = require(script.Fade)
+	self.fade = require(Root.Fade)
 	
 	self.tween = function(object, info, goal)
 		local tween = self._services.TweenService:Create(object, info, goal)
