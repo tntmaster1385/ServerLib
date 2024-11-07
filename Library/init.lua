@@ -536,19 +536,17 @@ function Library:Window(Options)
 
 		Fade:FadeClose(Main, 0)
 		ContentProvider:PreloadAsync({WindowGui, Main})
-		if game:IsLoaded() then
-			local NewIntro = Intro.new(Options.Theme[Options.CurrentTheme].BrandColor)
-			NewIntro:load(Main)
-			Fade:FadeOpen(Main, .3)
-			MainScale.Scale = .95
-			self:Tween(MainScale, TweenInfo.new(.3), {Scale = 1})
-			task.spawn(function()
-				wait(.3)
-				Pages["Visible"] = true
-				self:SetDraggable(Main, Main, Options.DragSnapping)
-				Fade:FadeClose(Navigation, .3)
-			end)
-		end
+		local NewIntro = Intro.new(Options.Theme[Options.CurrentTheme].BrandColor)
+		NewIntro:load(Main)
+		Fade:FadeOpen(Main, .3)
+		MainScale.Scale = .95
+		self:Tween(MainScale, TweenInfo.new(.3), {Scale = 1})
+		task.spawn(function()
+			wait(.3)
+			Pages["Visible"] = true
+			self:SetDraggable(Main, Main, Options.DragSnapping)
+			Fade:FadeClose(Navigation, .3)
+		end)
 	end
 
 	function Window:SwitchTheme(Theme)
